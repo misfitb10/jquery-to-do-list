@@ -1,0 +1,51 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*
+   To Do List
+*/
+.input {
+    padding: 10px 15px;
+    border: 1px solid #cecece;
+}
+
+.input--stuff {
+    max-width: 50%;
+    width: 100%;
+    transition: all 0.245s;
+}
+
+.input--error {
+    border: 1px solid #ff0000;
+}
+
+.submit {
+    text-decoration: none;
+}
+
+.submit--stuff {
+    color: #008000;
+    font-weight: bold;
+}
+
+.message--error {
+    display: none;
+    margin-top: 5px;
+    color: #ff0000;
+}
+
+.removeListItem {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 12px;
+}

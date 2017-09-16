@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery To Do List</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>jQuery To Do List</h1>
+        </header>
+
+        <main>
+            <div class="form__input">
+                <input class="input input--stuff" type="text" placeholder="to do item...">
+                <a href="#" class="submit submit--stuff">ADD</a>
+                <div class="message--error">Please make up a to do item. Press <strong>ADD</strong> afterwards.</div>
+            </div>
+
+            <div class="form__output">
+                <div class="listContainer">
+                    <!-- To Do List -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
