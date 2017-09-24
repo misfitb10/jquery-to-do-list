@@ -1,3 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     margin: 20px;
     font-family: Arial, sans-serif;
@@ -13,9 +19,10 @@ body {
 
 /*
    To Do List
+   Input fields
 */
 .input {
-    padding: 10px 15px;
+    padding: 0 15px 0 15px;
     border: 1px solid #cecece;
 }
 
@@ -23,6 +30,8 @@ body {
     max-width: 50%;
     width: 100%;
     transition: all 0.245s;
+    height: 40px;
+    line-height: 40px;
 }
 
 .input--error {
@@ -44,8 +53,105 @@ body {
     color: #ff0000;
 }
 
+/*
+    To Do List Items
+ */
+
+.todoList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.todoList {
+    margin: 10px 0;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.todoList li {
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    list-style: decimal inside;
+    animation: fadeIn;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    transition: all 0.25s;
+}
+
+.todoList li:nth-child(odd) {
+    background-color: #fbfbfb;
+}
+
+.todoList li:hover {
+    background-color: #ededed;
+}
+
+.todoList li + li {
+    border-top: 0 none;
+}
+
+.todoList .btn--removeListItem {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+
 .removeListItem {
     color: #ff0000;
     text-decoration: none;
     font-size: 12px;
+}
+
+/*
+    Buttons
+ */
+.btn {
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn--removeEntireList {
+    background-color: #ff0000;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.25s;
+}
+
+.btn--removeEntireList:hover {
+    background-color: #d80000;
+}
+
+.btn--removeListItem {
+    color: #ff0000;
+    font-size: 12px;
+    border: 1px solid red;
+    padding: 3px 7px;
+    transition: all 0.25s;
+}
+
+.btn--removeListItem:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.submit--stuff {
+    background-color: #008000;
+    padding: 0 10px 0 10px;
+    height: 40px;
+    line-height: 40px;
+    transition: all 0.25s;
+}
+
+.submit--stuff:hover {
+    background-color: #006d00;
 }
